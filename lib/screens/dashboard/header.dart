@@ -1,6 +1,6 @@
 import 'package:admin/res/assets_res.dart';
-import 'package:admin/screens/dashboard/components/search_field.dart';
 import 'package:admin/screens/dashboard/components/profile_card.dart';
+import 'package:admin/screens/dashboard/components/search_field.dart';
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
@@ -16,7 +16,7 @@ class Header extends StatelessWidget {
           'Dashboard',
           style: Theme.of(context).textTheme.headline6,
         ),
-        Spacer(),
+        Spacer(flex: 2),
         Expanded(
           child: SearchField(
             onTap: () {},
