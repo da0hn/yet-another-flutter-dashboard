@@ -10,16 +10,13 @@ class SideMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      flex: 1,
-      child: Drawer(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              _header(),
-              ..._menuItems(),
-            ],
-          ),
+    return Drawer(
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            _header(),
+            ..._menuItems(),
+          ],
         ),
       ),
     );

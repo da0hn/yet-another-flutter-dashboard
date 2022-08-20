@@ -10,7 +10,7 @@ class MainScreen extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SideMenu(),
+            Expanded(flex: 1, child: SideMenu()),
             Expanded(flex: 5, child: DashboardScreen()),
           ],
         ),
