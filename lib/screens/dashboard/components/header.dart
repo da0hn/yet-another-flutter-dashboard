@@ -1,7 +1,8 @@
-import 'package:admin/res/assets_res.dart';
-import 'package:admin/screens/dashboard/components/profile_card.dart';
-import 'package:admin/screens/dashboard/components/search_field.dart';
 import 'package:flutter/material.dart';
+
+import '../../../res/assets_res.dart';
+import 'profile_card.dart';
+import 'search_field.dart';
 
 class Header extends StatelessWidget {
   const Header({
