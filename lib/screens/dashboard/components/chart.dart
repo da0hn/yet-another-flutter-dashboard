@@ -20,7 +20,10 @@ class Chart extends StatelessWidget {
               startDegreeOffset: -90,
             ),
           ),
-          const ChartLabel(),
+          const ChartLabel(
+            current: '129.1',
+            total: '256.0',
+          ),
         ],
       ),
     );
@@ -65,7 +68,12 @@ class Chart extends StatelessWidget {
 class ChartLabel extends StatelessWidget {
   const ChartLabel({
     Key key,
+    @required this.current,
+    @required this.total,
   }) : super(key: key);
+
+  final String current;
+  final String total;
 
   @override
   Widget build(BuildContext context) {
@@ -75,14 +83,14 @@ class ChartLabel extends StatelessWidget {
         children: [
           const SizedBox(height: defaultPadding),
           Text(
-            '29.1',
+            current,
             style: Theme.of(context).textTheme.headline4.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.w600,
                   height: 0.5,
                 ),
           ),
-          const Text('of 128GB'),
+          Text('of $total GB'),
         ],
       ),
     );
