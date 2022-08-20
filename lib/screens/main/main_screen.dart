@@ -1,6 +1,6 @@
+import 'package:admin/screens/dashboard/dashboard_screen.dart';
 import 'package:admin/screens/main/components/side_menu.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class MainScreen extends StatelessWidget {
   @override
@@ -10,17 +10,10 @@ class MainScreen extends StatelessWidget {
         child: Row(
           children: [
             SideMenu(),
-            Expanded(
-              flex: 5,
-              child: Container(
-                color: Colors.blue,
-              ),
-            ),
+            Expanded(flex: 5, child: DashboardScreen()),
           ],
         ),
       ),
     );
   }
 }
-
-
