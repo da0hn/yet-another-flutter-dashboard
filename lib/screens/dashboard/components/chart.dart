@@ -20,7 +20,7 @@ class Chart extends StatelessWidget {
               startDegreeOffset: -90,
             ),
           ),
-          ChartLabel(),
+          const ChartLabel(),
         ],
       ),
     );
@@ -36,19 +36,19 @@ class Chart extends StatelessWidget {
       ),
       PieChartSectionData(
         value: 25,
-        color: Color(0xFFFFCF26),
+        color: const Color(0xFFFFCF26),
         showTitle: false,
         radius: 22,
       ),
       PieChartSectionData(
         value: 20,
-        color: Color(0xFF26E5FF),
+        color: const Color(0xFF26E5FF),
         showTitle: false,
         radius: 20,
       ),
       PieChartSectionData(
         value: 15,
-        color: Color(0xFFEE2727),
+        color: const Color(0xFFEE2727),
         showTitle: false,
         radius: 18,
       ),
@@ -73,7 +73,7 @@ class ChartLabel extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(height: defaultPadding),
+          const SizedBox(height: defaultPadding),
           Text(
             '29.1',
             style: Theme.of(context).textTheme.headline4.copyWith(
@@ -82,7 +82,7 @@ class ChartLabel extends StatelessWidget {
                   height: 0.5,
                 ),
           ),
-          Text('of 128GB'),
+          const Text('of 128GB'),
         ],
       ),
     );

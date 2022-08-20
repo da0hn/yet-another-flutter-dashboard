@@ -18,7 +18,7 @@ class SearchField extends StatelessWidget {
           fillColor: secondaryColor,
           filled: true,
           hintText: 'Search',
-          border: OutlineInputBorder(
+          border: const OutlineInputBorder(
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.all(
               Radius.circular(10),
@@ -27,15 +27,15 @@ class SearchField extends StatelessWidget {
           suffixIcon: InkWell(
             onTap: onTap,
             child: Container(
-              margin: EdgeInsets.symmetric(
+              margin: const EdgeInsets.symmetric(
                 horizontal: defaultPadding / 2,
               ),
-              padding: EdgeInsets.all(defaultPadding * 0.75),
+              padding: const EdgeInsets.all(defaultPadding * 0.75),
               decoration: BoxDecoration(
                 color: primaryColor,
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: SvgPicture.asset(AssetsResources.SEARCH),
+              child: SvgPicture.asset(AssetsRes.SEARCH),
             ),
           )),
     );

@@ -15,8 +15,8 @@ class ProfileCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: defaultPadding),
-      padding: EdgeInsets.symmetric(
+      margin: const EdgeInsets.only(left: defaultPadding),
+      padding: const EdgeInsets.symmetric(
         horizontal: defaultPadding,
         vertical: defaultPadding / 2,
       ),
@@ -28,7 +28,7 @@ class ProfileCard extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(
-            this.image,
+            image,
             height: 38,
             filterQuality: FilterQuality.high,
           ),
@@ -36,9 +36,9 @@ class ProfileCard extends StatelessWidget {
             padding: const EdgeInsets.symmetric(
               horizontal: defaultPadding / 2,
             ),
-            child: Text(this.username),
+            child: Text(username),
           ),
-          Icon(Icons.keyboard_arrow_down, color: Colors.white),
+          const Icon(Icons.keyboard_arrow_down, color: Colors.white),
         ],
       ),
     );

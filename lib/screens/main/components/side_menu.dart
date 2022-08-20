@@ -25,7 +25,7 @@ class SideMenu extends StatelessWidget {
   DrawerHeader _header() {
     return DrawerHeader(
       child: Image.asset(
-        AssetsResources.IMAGE_LOGO,
+        AssetsRes.IMAGE_LOGO,
         filterQuality: FilterQuality.high,
       ),
     );
@@ -35,37 +35,37 @@ class SideMenu extends StatelessWidget {
     return [
       SideMenuItem(
         onTap: () {},
-        icon: AssetsResources.MENU_DASHBOARD,
+        icon: AssetsRes.MENU_DASHBOARD,
         title: 'Dashboard',
       ),
       SideMenuItem(
         onTap: () {},
-        icon: AssetsResources.MENU_TRANSACTION,
+        icon: AssetsRes.MENU_TRANSACTION,
         title: 'Transaction',
       ),
       SideMenuItem(
         onTap: () {},
-        icon: AssetsResources.MENU_TASK,
+        icon: AssetsRes.MENU_TASK,
         title: 'Task',
       ),
       SideMenuItem(
         onTap: () {},
-        icon: AssetsResources.MENU_DOC,
+        icon: AssetsRes.MENU_DOC,
         title: 'Documents',
       ),
       SideMenuItem(
         onTap: () {},
-        icon: AssetsResources.MENU_STORE,
+        icon: AssetsRes.MENU_STORE,
         title: 'Store',
       ),
       SideMenuItem(
         onTap: () {},
-        icon: AssetsResources.MENU_NOTIFICATION,
+        icon: AssetsRes.MENU_NOTIFICATION,
         title: 'Notification',
       ),
       SideMenuItem(
         onTap: () {},
-        icon: AssetsResources.MENU_SETTING,
+        icon: AssetsRes.MENU_SETTING,
         title: 'Settings',
       ),
     ];
@@ -73,7 +73,7 @@ class SideMenu extends StatelessWidget {
 }
 
 class SideMenuItem extends StatelessWidget {
-  SideMenuItem({
+  const SideMenuItem({
     Key key,
     @required this.title,
     @required this.icon,
@@ -96,7 +96,7 @@ class SideMenuItem extends StatelessWidget {
       ),
       title: Text(
         title,
-        style: TextStyle(color: Colors.white54, fontSize: 20),
+        style: const TextStyle(color: Colors.white54, fontSize: 20),
       ),
     );
   }

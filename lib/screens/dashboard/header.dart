@@ -16,14 +16,14 @@ class Header extends StatelessWidget {
           'Dashboard',
           style: Theme.of(context).textTheme.headline6,
         ),
-        Spacer(flex: 2),
+        const Spacer(flex: 2),
         Expanded(
           child: SearchField(
             onTap: () {},
           ),
         ),
-        ProfileCard(
-          image: AssetsResources.IMAGE_PROFILE_PIC,
+        const ProfileCard(
+          image: AssetsRes.IMAGE_PROFILE_PIC,
           username: 'Angelina Joli',
         ),
       ],
