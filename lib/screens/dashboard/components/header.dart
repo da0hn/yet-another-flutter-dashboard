@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../../../controllers/MenuController.dart';
 import '../../../res/assets_res.dart';
 import '../../../responsive.dart';
 import 'profile_card.dart';
@@ -19,7 +21,7 @@ class Header extends StatelessWidget {
           child: IconButton(
             icon: const Icon(Icons.menu),
             iconSize: 24,
-            onPressed: () {},
+            onPressed: context.read<MenuController>().controlMenu,
           ),
         ),
         Visibility(
