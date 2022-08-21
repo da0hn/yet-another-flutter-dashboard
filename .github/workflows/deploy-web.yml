@@ -24,6 +24,5 @@ jobs:
       - name: Build Web
         run: |
           flutter build web --release
-          mv build/web site
-          rm build
+          mv build/web docs
 
