@@ -6,7 +6,7 @@ class RecentFile {
   RecentFile({this.icon, this.title, this.date, this.size});
 }
 
-List demoRecentFiles = [
+final recentFilesData = <RecentFile>[
   RecentFile(
     icon: AssetsRes.XD_FILE,
     title: 'XD File',

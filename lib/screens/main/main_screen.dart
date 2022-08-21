@@ -1,6 +1,7 @@
-import 'package:admin/screens/dashboard/dashboard_screen.dart';
-import 'package:admin/screens/main/components/side_menu.dart';
 import 'package:flutter/material.dart';
+
+import '../dashboard/dashboard_screen.dart';
+import 'components/side_menu.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key key}) : super(key: key);
