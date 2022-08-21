@@ -24,7 +24,6 @@ class StorageDetail extends StatelessWidget {
           StorageDetailTitle(label: 'Storage Details'),
           SizedBox(height: defaultPadding),
           Chart(),
-          SizedBox(height: defaultPadding),
           StorageDetailCard(
             title: 'Documents Files',
             detail: '1538 Files',

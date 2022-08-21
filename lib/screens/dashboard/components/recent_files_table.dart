@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../constants.dart';
 import '../../../models/RecentFile.dart';
+import '../../../responsive.dart';
 import 'recent_files_title.dart';
 
 class RecentFilesTable extends StatelessWidget {
@@ -36,7 +37,7 @@ class RecentFilesTable extends StatelessWidget {
               ],
               rows: List.generate(
                 data.length,
-                (index) => _recentFileTableItem(data[index]),
+                (index) => _recentFileTableItem(data[index], context),
               ),
             ),
           ),
@@ -45,22 +46,41 @@ class RecentFilesTable extends StatelessWidget {
     );
   }
 
-  DataRow _recentFileTableItem(RecentFile item) {
+  DataRow _recentFileTableItem(RecentFile item, BuildContext context) {
     return DataRow(
       cells: [
         DataCell(
           Row(
             children: [
-              SvgPicture.asset(
-                item.icon,
-                width: 30,
-                height: 30,
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: defaultPadding,
+              Visibility(
+                visible: !Responsive.isMobile(context),
+                child: Responsive(
+                  desktop: SvgPicture.asset(
+                    item.icon,
+                    width: 30,
+                    height: 30,
+                  ),
+                  mobile: SvgPicture.asset(
+                    item.icon,
+                    width: 20,
+                    height: 20,
+                  ),
                 ),
-                child: Text(item.title),
+              ),
+              Responsive(
+                desktop: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: defaultPadding,
+                  ),
+                  child: Text(item.title),
+                ),
+                tablet: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: defaultPadding,
+                  ),
+                  child: Text(item.title),
+                ),
+                mobile: Text(item.title),
               )
             ],
           ),
