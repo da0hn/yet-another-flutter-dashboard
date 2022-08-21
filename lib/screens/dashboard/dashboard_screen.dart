@@ -4,8 +4,8 @@ import '../../constants.dart';
 import '../../models/RecentFile.dart';
 import 'components/header.dart';
 import 'components/my_files.dart';
+import 'components/recent_files_table.dart';
 import 'components/storage_detail.dart';
-import 'recent_files_table.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({Key key}) : super(key: key);

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../constants.dart';
-import '../../models/RecentFile.dart';
+import '../../../constants.dart';
+import '../../../models/RecentFile.dart';
 import 'recent_files_title.dart';
 
 class RecentFilesTable extends StatelessWidget {
