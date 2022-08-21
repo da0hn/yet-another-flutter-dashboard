@@ -32,10 +32,6 @@ class Header extends StatelessWidget {
           ),
         ),
         const Spacer(),
-        // Visibility(
-        //   visible: Responsive.isDesktop(context),
-        //   child: const Spacer(),
-        // ),
         Expanded(
           child: Visibility(
             visible: !Responsive.isMobile(context),
