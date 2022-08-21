@@ -89,9 +89,9 @@ class AddNewFileButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton.icon(
       style: TextButton.styleFrom(
-        padding: const EdgeInsets.symmetric(
+        padding: EdgeInsets.symmetric(
           horizontal: defaultPadding * 1.5,
-          vertical: defaultPadding,
+          vertical: defaultPadding / (Responsive.isMobile(context) ? 2 : 1),
         ),
         elevation: 20.0,
       ),
